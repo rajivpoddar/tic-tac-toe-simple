@@ -43,9 +43,9 @@ const GameBoard = () => {
   }
 
   return (
-    <div className='game-grid'>
+    <div className='game-grid' role='grid'>
       {grid.map((value, index) => (
-        <button key={index} className='grid-cell' role='button' onClick={() => handleClick(index)}>
+        <button key={index} className='grid-cell' onClick={() => handleClick(index)}>
           {value}
         </button>
       ))}
